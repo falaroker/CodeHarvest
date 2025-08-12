@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeHarvest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <img src="logo.png" alt="CodeHarvest Logo"> 
+  </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#join">Join the Harvest</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Local Roots, Global Impact</h1>
+    <p>CodeHarvest invests in young minds and growing spaces, planting seeds of leadership and environmental stewardship across local communities.</p>
+    <a href="#join" class="cta-btn">Join the Movement</a>
+  </section>
+
+  <section class="values">
+    <div class="value">
+      <div class="icon">✊</div>
+      <h3>Empowerment</h3>
+    </div>
+    <div class="value">
+      <div class="icon">💡</div>
+      <h3>Innovation</h3>
+    </div>
+    <div class="value">
+      <div class="icon">⚖️</div>
+      <h3>Equity</h3>
+    </div>
+  </section>
+
+  <section id="about">
+  <h2>About</h2>
+  <p>
+    It began with a question: What can we build with what we already have? A small circle of young leaders came together—not waiting for resources, but activating their skills, creativity, and drive.
+  </p>
+
+  <div id="more-content" style="display: none;">
+    <p>
+      At CodeHarvest, we believe that nature holds the key to healing, growth, and connection. What started as a small initiative to promote sustainable living has blossomed into a vibrant community of eco-conscious individuals who care deeply about the planet and each other.
+    </p>
+    <p>
+      Our journey began with a simple idea: to make environmental awareness accessible and inspiring. Through workshops, local events, and creative storytelling, we’ve helped people rediscover the beauty of trees, the wisdom of the earth, and the joy of living in harmony with nature.
+    </p>
+    <p>
+      Whether you're planting your first seed or leading a green movement, we’re here to support you. Join us as we continue to grow, learn, and nurture a future that’s rooted in compassion, sustainability, and hope.
+    </p>
+  </div>
+
+  <a href="#" id="toggle-link" onclick="toggleContent()">Read More</a>
+</section>
+
+<script>
+  function toggleContent() {
+    const content = document.getElementById("more-content");
+    const link = document.getElementById("toggle-link");
+
+    if (content.style.display === "none") {
+      content.style.display = "block";
+      link.textContent = "Read Less";
+    } else {
+      content.style.display = "none";
+      link.textContent = "Read More";
+    }
+  }
+</script>
+
+<section id="programs">
+  <h2>Our Programs</h2>
+  <div class="program-cards">
+    <div class="card">
+      <img src="images/coderoots.png" alt="CodeRoots Program">
+      <h3>CodeRoots</h3>
+      <p>Empowering rural youth with foundational coding skills and digital literacy.</p>
+      
+    </div>
+    <div class="card">
+      <img src="images/techsprout.jpg" alt="TechSprout Program">
+      <h3>TechSprout</h3>
+      <p>Mentorship and project-based learning for young innovators in Uganda.</p>
+      
+    </div>
+    <div class="card">
+      <img src="images/greenhack.png" alt="GreenHack Program">
+      <h3>GreenHack</h3>
+      <p>Hackathons focused on solving local environmental and agricultural challenges.</p>
+      
+    </div>
+  </div>
+</section>
+
+<section id="join" class="join-harvest">
+  <h2>Join the Harvest</h2>
+  <p>Whether you're a mentor, a volunteer, or a partner, there's a place for you in our growing community. Help us cultivate leadership, innovation, and opportunity.</p>
+  <a href="#contact" class="cta-btn">Get Involved</a>
+</section>
+
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Whether you have questions, ideas, or want to get involved, drop us a message below.</p>
+  
+  <form action="mailto:your@email.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="1.5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+
+</section>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <br>
+    <div class="footer-logo"> CodeHarvest</div>
+    <ul class="footer-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#join">Join</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="footer-location">📍 Kampala, Uganda</p>
+    <p class="copyright">© 2025 CodeHarvest. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
